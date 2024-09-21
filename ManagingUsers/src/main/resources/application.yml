@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ManagingUsers
+  datasource:
+    url: jdbc:mysql://localhost:3306/manageusers
+    username: springstudent
+    password: springstudent
+
