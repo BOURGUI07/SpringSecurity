@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/HelloSpringSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ManagingUsers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configure-Endpoint-level-Authorization/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/configureAuthorization/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/implement-Auth/src/main/java" charset="UTF-8" />
   </component>

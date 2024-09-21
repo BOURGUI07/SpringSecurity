@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="implement-Auth" />
         <module name="configureAuthorization" />
+        <module name="configure-Endpoint-level-Authorization" />
         <module name="HelloSpringSecurity" />
         <module name="ManagingUsers" />
       </profile>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="HelloSpringSecurity" options="-parameters" />
       <module name="ManagingUsers" options="-parameters" />
+      <module name="configure-Endpoint-level-Authorization" options="-parameters" />
       <module name="configureAuthorization" options="-parameters" />
       <module name="implement-Auth" options="-parameters" />
     </option>
