@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/HelloSpringSecurity/pom.xml" />
         <option value="$PROJECT_DIR$/ManagingUsers/pom.xml" />
+        <option value="$PROJECT_DIR$/implement-Auth/pom.xml" />
+        <option value="$PROJECT_DIR$/configureAuthorization/pom.xml" />
       </list>
     </option>
   </component>
