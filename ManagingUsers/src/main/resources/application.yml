@@ -6,3 +6,6 @@ spring:
     username: springstudent
     password: springstudent
 
+
+authorization:
+  key: 12345
