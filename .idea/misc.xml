@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/configure-CSRF-protection/pom.xml" />
         <option value="$PROJECT_DIR$/configure-CORS/pom.xml" />
         <option value="$PROJECT_DIR$/MethodLevelSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/MethodLevelSecurity-Filtering/pom.xml" />
       </list>
     </option>
   </component>

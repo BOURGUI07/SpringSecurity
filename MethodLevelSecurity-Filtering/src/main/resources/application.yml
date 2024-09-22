@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: MethodLevelSecurityFiltering
+  datasource:
+    url: jdbc:mysql://localhost:3306/productdb
+    username: springstudent
+    password: springstudent

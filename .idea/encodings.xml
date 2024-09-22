@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/HelloSpringSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ManagingUsers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MethodLevelSecurity-Filtering/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MethodLevelSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/configure-CORS/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/configure-CSRF-protection/src/main/java" charset="UTF-8" />
