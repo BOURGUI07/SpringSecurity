@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/implement-Auth/pom.xml" />
         <option value="$PROJECT_DIR$/configureAuthorization/pom.xml" />
         <option value="$PROJECT_DIR$/configure-Endpoint-level-Authorization/pom.xml" />
+        <option value="$PROJECT_DIR$/configure-CSRF-protection/pom.xml" />
       </list>
     </option>
   </component>
