@@ -10,6 +10,7 @@
         <module name="configure-CORS" />
         <module name="implement-Auth" />
         <module name="HelloSpringSecurity" />
+        <module name="MethodLevelSecurity" />
         <module name="configure-CSRF-protection" />
         <module name="configureAuthorization" />
         <module name="configure-Endpoint-level-Authorization" />
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="HelloSpringSecurity" options="-parameters" />
       <module name="ManagingUsers" options="-parameters" />
+      <module name="MethodLevelSecurity" options="-parameters" />
       <module name="configure-CORS" options="-parameters" />
       <module name="configure-CSRF-protection" options="-parameters" />
       <module name="configure-Endpoint-level-Authorization" options="-parameters" />
