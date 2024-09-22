@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/configureAuthorization/pom.xml" />
         <option value="$PROJECT_DIR$/configure-Endpoint-level-Authorization/pom.xml" />
         <option value="$PROJECT_DIR$/configure-CSRF-protection/pom.xml" />
+        <option value="$PROJECT_DIR$/configure-CORS/pom.xml" />
       </list>
     </option>
   </component>
