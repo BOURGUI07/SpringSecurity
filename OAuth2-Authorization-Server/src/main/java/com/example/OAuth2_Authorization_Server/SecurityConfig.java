@@ -17,6 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.core.oidc.OidcScopes;
+import org.springframework.security.oauth2.jwt.JwtClaimsSet;
 import org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
@@ -25,6 +26,8 @@ import org.springframework.security.oauth2.server.authorization.settings.Authori
 import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
 import org.springframework.security.oauth2.server.authorization.settings.OAuth2TokenFormat;
 import org.springframework.security.oauth2.server.authorization.settings.TokenSettings;
+import org.springframework.security.oauth2.server.authorization.token.JwtEncodingContext;
+import org.springframework.security.oauth2.server.authorization.token.OAuth2TokenCustomizer;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
@@ -93,7 +96,15 @@ public class SecurityConfig {
                         .requireProofKey(false)
                         .build())
                 .build();
-        return new InMemoryRegisteredClientRepository(registeredClient);
+        var resourceServer = RegisteredClient.withId(UUID.randomUUID().toString())
+                .clientId("resource_server")
+                .clientSecret("resource_server_secret")
+                .clientAuthenticationMethod(
+                        ClientAuthenticationMethod.CLIENT_SECRET_BASIC
+                )
+                .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
+                .build();
+        return new InMemoryRegisteredClientRepository(registeredClient,resourceServer);
     }
 
     @Bean
@@ -115,5 +126,13 @@ public class SecurityConfig {
     @Bean
     public AuthorizationServerSettings authorizationServerSettings(){
         return AuthorizationServerSettings.builder().build();
+    }
+
+    @Bean
+    public OAuth2TokenCustomizer<JwtEncodingContext> jwtEncodingContextOAuth2TokenCustomizer(){
+        return context -> {
+            JwtClaimsSet.Builder claimsSet = context.getClaims();
+            claimsSet.claim("priority","HIGH");
+        };
     }
 }

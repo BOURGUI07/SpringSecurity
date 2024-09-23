@@ -15,6 +15,7 @@
         <module name="MethodLevelSecurity" />
         <module name="configure-CSRF-protection" />
         <module name="configureAuthorization" />
+        <module name="OAuth2-Resource-Server" />
         <module name="configure-Endpoint-level-Authorization" />
         <module name="ManagingUsers" />
       </profile>
@@ -27,6 +28,7 @@
       <module name="MethodLevelSecurity" options="-parameters" />
       <module name="MethodLevelSecurity-Filtering" options="-parameters" />
       <module name="OAuth2-Authorization-Server" options="-parameters" />
+      <module name="OAuth2-Resource-Server" options="-parameters" />
       <module name="configure-CORS" options="-parameters" />
       <module name="configure-CSRF-protection" options="-parameters" />
       <module name="configure-Endpoint-level-Authorization" options="-parameters" />
