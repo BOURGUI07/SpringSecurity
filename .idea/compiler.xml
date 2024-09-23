@@ -10,6 +10,7 @@
         <module name="configure-CORS" />
         <module name="implement-Auth" />
         <module name="MethodLevelSecurity-Filtering" />
+        <module name="OAuth2-Authorization-Server" />
         <module name="HelloSpringSecurity" />
         <module name="MethodLevelSecurity" />
         <module name="configure-CSRF-protection" />
@@ -25,6 +26,7 @@
       <module name="ManagingUsers" options="-parameters" />
       <module name="MethodLevelSecurity" options="-parameters" />
       <module name="MethodLevelSecurity-Filtering" options="-parameters" />
+      <module name="OAuth2-Authorization-Server" options="-parameters" />
       <module name="configure-CORS" options="-parameters" />
       <module name="configure-CSRF-protection" options="-parameters" />
       <module name="configure-Endpoint-level-Authorization" options="-parameters" />
